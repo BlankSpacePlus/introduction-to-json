@@ -668,22 +668,22 @@ JSON与XML的不同之处：
   <body>
     <h1>员工信息</h1>
     <p>
-      ID: <span id="js_id"></span><br/> 
-      Name: <span id="js_name"></span><br/> 
-      Age: <span id="js_age"></span><br/> 
-	  Email: <span id="js_email"></span><br/> 
+      ID: <span id="js_id"></span><br/>
+      Name: <span id="js_name"></span><br/>
+      Age: <span id="js_age"></span><br/>
+      Email: <span id="js_email"></span><br/>
     </p>
     <script>
       var jsonObj= {
-	    "id":"1111",
-	    "name":"王富贵", 
-	    "age":"30",
-		"email":"fugui@gmail.com"
+	      "id":"1111",
+	      "name":"王富贵", 
+	      "age":"30",
+        "email":"fugui@gmail.com"
       };
       document.getElementById("js_id").innerHTML=jsonObj.id 
       document.getElementById("js_name").innerHTML=jsonObj.name
       document.getElementById("js_age").innerHTML=jsonObj.age
-	  document.getElementById("js_email").innerHTML=jsonObj.email
+	    document.getElementById("js_email").innerHTML=jsonObj.email
     </script>
   </body>
 </html>
@@ -793,15 +793,15 @@ for (a in jsonObj) {
   </head>
   <body>
     <h1>员工信息</h1>
-      <p id="attribute"></p>
+    <p id="attribute"></p>
     <script>
       var jsonObj= {
-	    "id":"1111",
-	    "name":"王富贵", 
-	    "age":"30",
-		"email":"fugui@gmail.com"
+	      "id":"1111",
+	      "name":"王富贵", 
+	      "age":"30",
+		    "email":"fugui@gmail.com"
       };
-	  for (a in jsonObj) {
+	    for (a in jsonObj) {
         document.getElementById("attribute").innerHTML += a + "：" + jsonObj[a]+ "<br>";
       }
     </script>
@@ -829,16 +829,16 @@ jsonObj.name="陈二狗";
   </head>
   <body>
     <h1>员工信息</h1>
-      <p id="attribute"></p>
+    <p id="attribute"></p>
     <script>
       var jsonObj= {
-	    "id":"1111",
-	    "name":"王富贵", 
-	    "age":"30",
-		"email":"fugui@gmail.com"
+	      "id":"1111",
+	      "name":"王富贵", 
+	      "age":"30",
+		    "email":"fugui@gmail.com"
       };
-	  jsonObj.name="陈二狗";
-	  for (a in jsonObj) {
+	    jsonObj.name="陈二狗";
+	    for (a in jsonObj) {
         document.getElementById("attribute").innerHTML += a + "：" + jsonObj[a]+ "<br>";
       }
     </script>
@@ -866,17 +866,17 @@ delete jsonObj["email"];
   </head>
   <body>
     <h1>员工信息</h1>
-      <p id="attribute"></p>
+    <p id="attribute"></p>
     <script>
       var jsonObj= {
-	    "id":"1111",
-	    "name":"王富贵", 
-	    "age":"30",
-		"email":"fugui@gmail.com"
+	      "id":"1111",
+	      "name":"王富贵", 
+	      "age":"30",
+		    "email":"fugui@gmail.com"
       };
-	  delete jsonObj.age;
-	  delete jsonObj["email"];
-	  for (a in jsonObj) {
+	    delete jsonObj.age;
+	    delete jsonObj["email"];
+	    for (a in jsonObj) {
         document.getElementById("attribute").innerHTML += a + "：" + jsonObj[a]+ "<br>";
       }
     </script>
